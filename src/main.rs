@@ -3,7 +3,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 
 fn main() {
     let home = env::var("HOME").unwrap();
-    let dir = format!("{}/Perso/auto-wallpaper/wallpapers", home);
+    let dir = format!("{}/Perso/auto-wallpaper-42/wallpapers", home);
 
     let extensions = ["jpg", "jpeg", "png", "webp", "bmp"];
     let mut images: Vec<_> = fs::read_dir(&dir)
